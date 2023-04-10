@@ -1,0 +1,12 @@
+Wireframe
+Guía de ejercicios
+● Realizar el Wireframe de un formulario de contacto utilizando la Grilla de Bootstrap en
+Figma.
+El formulario deberá tener los siguientes campos:
+Nombre
+Apellido
+Cargo
+Email
+Teléfono
+Adjuntar CV
+Mensaje
