@@ -1,0 +1,71 @@
+body{
+    background-color: #faf9f9;
+}
+/* --------------- HEADER ------------ */
+
+nav{
+    background-color: white;
+}
+.logo{
+    height: 3rem;
+}
+a{
+    color: #F68CB9;
+    text-decoration:none;
+    margin: 0 1rem;
+}
+.banner{
+    width: 100vw;
+}
+
+/* --------------- FORM ------------ */
+
+.main{
+    border: 1px solid #c3c3c3;
+    padding: 2rem;
+    max-width: 75%;
+    margin: 3rem 0;
+    border-radius: 30px;
+}
+.primer-div-form{
+    display: flex;
+    justify-content: space-between;
+}
+.segundo-div-form{
+    display: grid;
+}
+/* --------------- SECTION ------------ */
+
+#contacto{
+    max-width: 80%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* --------------- FOOTER ------------ */
+
+.envoltorio-iconos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.envoltorio-iconos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    line-height: 1.8;
+
+}
+.envoltorio-iconos div svg{
+    margin: 15px 0;
+}
+.ultimo-footer{
+    background-color: #F68CB9;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
