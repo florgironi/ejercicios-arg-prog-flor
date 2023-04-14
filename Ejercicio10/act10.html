@@ -1,0 +1,24 @@
+<!--  Crear dos párrafos en el body de una página. Capturar el evento click solo del primero utilizando la librería jQuery. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad10</title>
+</head>
+<body>
+    <p class="p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde dolores amet porro excepturi doloribus velit sed, rerum, aperiam vero dicta nam eveniet officiis repellendus quod veritatis corrupti? Veritatis optio provident enim consequuntur asperiores ullam debitis incidunt nesciunt est sint. Dolor facilis ut id nam ducimus deleniti velit est eligendi ipsa.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta, alias vero nobis maiores dolore distinctio, corporis necessitatibus quisquam minima magnam sapiente. Dicta vero officiis praesentium dolorum ratione qui quisquam.
+    </p>
+    <script>
+       const p = document.querySelector(".p");
+        p.addEventListener("click", ()=>{
+            console.log('click')
+        });
+    </script>
+</body>
+</html>

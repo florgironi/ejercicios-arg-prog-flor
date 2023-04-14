@@ -1,0 +1,43 @@
+<!-- Confeccionar una página que muestre dos tablas con tres filas cada una.Cambiar el color de fondo de cada fila de la primera tabla cuando sea presionada con el mouse. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 13</title>
+</head>
+<body>
+    <table id="outside" onclick="aver()">
+        <tr id="tr">
+          <td>Esta fila tiene que cambiar de color con el click</td>
+        </tr>
+        <tr>
+          <td>two</td>
+        </tr>
+        <tr>
+          <td>three</td>
+        </tr>
+    </table>
+    <table id="outside" onclick="aver()">
+        <tr>
+          <td>one</td>
+        </tr>
+        <tr>
+          <td>two</td>
+        </tr>
+        <tr>
+          <td>three</td>
+        </tr>
+    </table>
+
+    <script>
+        const trCambiaDeColor = document.getElementById("tr");
+
+        function aver() {
+            trCambiaDeColor.style.backgroundColor = 'red'
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- 12. Mostrar una lista no ordenada con 4 elementos 'li'. Ocultar el que se presiona. Para ocultar un elemento jQuery tiene un método llamado hide( ). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Actividad 12</title>
+</head>
+<body>
+    <ul>
+        <li class="elemento" >opcion 1</li>
+        <li class="elemento" >opcion 2</li>
+        <li class="elemento" >opcion 3</li>
+        <li class="elemento" >opcion 4</li>
+    </ul>
+    <script>
+        $( "li" ).click(function() {
+            $( this ).hide("slow");
+        });
+        
+    </script>
+</body>
+</html>
