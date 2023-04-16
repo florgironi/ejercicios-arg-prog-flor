@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 19</title>
+</head>
+<style>
+    .claseHover{
+        background-color: bisque;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+          <td >Primero</td>
+          <td >Primero</td>
+        </tr>
+        <tr>
+          <td>Segundo</td>
+          <td>Segundo</td>
+        </tr>
+    </table>
+
+    <script>
+        const elements = document.querySelectorAll('td')
+        elements.forEach((el)=>{
+            el.addEventListener("mouseover",(e)=>{
+                e.target.classList.add('claseHover');
+            })
+            el.addEventListener("mouseout",(e)=>{
+                e.target.classList.remove('claseHover');
+            })
+        })
+        
+    </script>
+</body>
+</html>

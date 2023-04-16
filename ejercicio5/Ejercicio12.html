@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <form action="#" style="padding: 2rem;">
+        <div>
+            <label>Nombre del cliente:</label>
+            <br/>
+            <input type="text" placeholder="Nombre" value="Pablo">
+        </div>
+
+        <div>
+            <label>
+                Material de la caja: 
+            </label>
+            <select name="Madera">
+                <option value="Madera">Madera</option>
+                <option value="Carton">Carton</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            <label>Seleccione unas dimensiones para la caja:</label>
+            <br/>
+            <input type="radio" name="tamaño" id="diminuta" checked>Diminuta</input>
+            <br/>
+            <input type="radio" name="tamaño" id="Mediana">Mediana</input>
+            <br/>
+            <input type="radio" name="tamaño" id="Grande">Grande</input>
+        </div>
+        <div>
+            <label for="">Comentarios</label>
+            <br/>
+            <textarea name="comentario" id="comentario" cols="20" rows="3">Que sea bonita</textarea>
+        </div>
+        <div>
+            <button>Enviar</button> <input type="text" value="Pablo ha pedido una caja de Madera con unas dimensiones diminutas. Que sea bonita">
+        </div>
+    </form>
+</body>
+</html>

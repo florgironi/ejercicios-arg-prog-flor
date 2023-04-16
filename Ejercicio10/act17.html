@@ -1,0 +1,22 @@
+<!-- Confeccionar una página que contenga algunas palabras con el elemento 'strong', luego cuando sean presionadas ocultarlas. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Actividad 17</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magni ullam recusandae quas cumque dolorem asperiores, provident, optio amet voluptas voluptatem quaerat vero. Porro, fugit asperiores. <strong>Si clickeas aqui, esto desaparece</strong> Possimus minima, placeat explicabo blanditiis voluptate tenetur, sequi illum hic aspernatur iure ullam rerum ratione? Totam veniam earum qui cupiditate <strong>Aqui tambien desaparece</strong> accusamus sit, perspiciatis officia praesentium velit rerum tempore blanditiis ipsam a? Magni, nam praesentium!</p>
+
+    <script>
+         $( "strong" ).click(function() {
+            $( this ).hide("slow");
+        });
+        
+    </script>
+</body>
+</html>

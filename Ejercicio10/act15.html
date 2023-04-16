@@ -1,0 +1,69 @@
+<!-- Crear una página que contenga dos tablas de 3 filas y 3 columnas cada una con un texto en cada casillero. Luego al presionar un botón cambiar por la cadena "-" solo el contenido de la primera tabla, dejando intacto el de la segunda. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 15</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="textoACambiar">Pirmera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+
+        </tr>
+        <tr>
+            <td class="textoACambiar">Primera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+
+        </tr>
+        <tr>
+            <td class="textoACambiar">Primera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+            <td class="textoACambiar">Pirmera tabla</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+
+        </tr>
+        <tr>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+
+        </tr>
+        <tr>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+            <td>Segunda tabla</td>
+        </tr>
+    </table>
+
+    <button>Eliminar contenido de tabla uno</button>
+
+    <script>
+        const boton = document.querySelector('button')
+        const textoACambiar = document.querySelectorAll(".textoACambiar")
+
+        const action = () => {
+            for (i = 0; i < textoACambiar.length; i++) {
+                textoACambiar[i].textContent = '-';
+            }
+        }
+        boton.addEventListener("click", action)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!-- 21. Confeccionar una página que contenga un div con un conjunto de párrafos. Cuando se presione con el mouse dentro del div ocultarlo lentamente y cuando esté completamente oculto hacer que aparezca lentamente otro bloque de texto. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Actividad 17</title>
+</head>
+<style>
+    button{
+        background-color: rgb(147, 174, 224);
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        height: 40px;
+        width: 7rem;
+    }
+    #form{
+        display: flex;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        padding: 3rem;
+        flex-direction: column;
+        margin: 4rem;
+    }
+    label{
+        margin: 1rem;
+        display: inline-grid;
+    }
+    #divFormDeExito{
+        border: 2px solid #c3c3c3;
+        border-radius: 20px;
+        height: 5rem ;
+        text-align: center;
+        margin: 3rem;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+</style>
+<body>
+        <form id="form" action="">
+            <h1>Formulario de contacto</h1>
+            <label for="nombre"> Nombre
+                <input type="text" id="nombre">
+            </label>
+            <label for="apellido"> Apellido
+                <input type="text" id="apellido">
+            </label>
+            <label for="celularDeContacto"> Celular de contacto
+                <input type="number" id="celularDeContacto">
+            </label>
+            <label for="email"> Email
+                <input type="email" id="email">
+            </label>
+            <label for="linkedin"> Linkedin
+                <input type="text" id="linkedin">
+            </label>
+            <label for="pagina"> Pagina web
+                <input type="text" id="pagina">
+            </label>
+            <label for="mensaje"> Mensaje
+                <textarea name="mensaje" id="mensaje"></textarea>
+            </label>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <div id="divFormDeExito">
+            El formulario fue enviado con exito! ✅
+        </div>
+    <script>
+
+    const boton = document.querySelector('button')
+    const div2 = document.querySelector('#divFormDeExito')
+    const formulario = document.querySelector('form')
+    
+    boton.addEventListener("click",(event)=>{
+        event.preventDefault();
+        console.log("se hace el click");
+        formulario.style.display = "none";
+        div2.style.display = "flex";
+   })
+    </script>
+</body>
+
+</html>

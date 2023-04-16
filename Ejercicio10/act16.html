@@ -1,0 +1,40 @@
+
+<!-- Definir un hipervínculo con la propiedad href con cadena vacía. Luego disponer tres botones que permitan fijar distintos hipervínculos para la propiedad href. Además actualizar el texto del hipervínculo. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 16</title>
+</head>
+<body>
+    <a href=""> HIPERVINCULO QUE CAMBIA </a>
+    <button id="href-google"> Hipervinculo Goole</button>
+    <button id="href-linkedin"> Hipervinculo Linkedin</button>
+    <button id="href-github"> Hipervinculo Github</button>
+
+    <script>
+        const ancla = document.querySelector('a')
+        const botonGoogle = document.querySelector('#href-google')
+        const botonlinkedin = document.querySelector('#href-linkedin')
+        const botongithub = document.querySelector('#href-github')
+        botonGoogle.addEventListener ('click',()=>{
+            ancla.textContent = "El ancla se convierte en google"
+            ancla.href = "https://www.google.com/"
+        })
+        botonlinkedin.addEventListener ('click',()=>{
+            ancla.textContent = "El ancla se convierte en Linkedin"
+            ancla.href = "https://www.linkedin.com/in/florenciagironi/"
+        })
+        botongithub.addEventListener ('click',()=>{
+            ancla.textContent = "El ancla se convierte en github"
+            ancla.href = "https://florgironi.github.io/florgironi/"
+        })
+
+
+
+
+    </script>
+</body>
+</html>

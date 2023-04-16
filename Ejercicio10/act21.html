@@ -1,0 +1,60 @@
+<!-- 21. Confeccionar una página que contenga un div con un conjunto de párrafos. Cuando se presione con el mouse dentro del div ocultarlo lentamente y cuando esté completamente oculto hacer que aparezca lentamente otro bloque de texto. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Actividad 17</title>
+</head>
+<style>
+    #second{
+        display: none;
+        color: red;
+        background-color: rgb(147, 174, 224);
+    }
+    #first{
+        color: #784367;
+        border: 1px solid #c3c3c3;
+    }
+</style>
+<body>
+        <div id="first">
+            <p><strong>Si clickeas aqui, esto desaparece</strong>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magni ullam recusandae quas cumque dolorem asperiores, provident, optio amet voluptas voluptatem quaerat vero. Porro, fugit asperiores.
+                Possimus minima, placeat explicabo blanditiis voluptate tenetur, sequi illum hic aspernatur iure ullam rerum
+                ratione? Totam veniam earum qui cupiditate accusamus sit, perspiciatis officia praesentium velit rerum
+                tempore blanditiis ipsam a? Magni, nam praesentium!</p>
+            <p> 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magni ullam recusandae quas cumque
+                dolorem asperiores, provident, optio amet voluptas voluptatem quaerat vero. Porro, fugit asperiores.
+                Possimus minima, placeat explicabo blanditiis voluptate tenetur, sequi illum hic aspernatur iure ullam rerum
+                ratione? Totam veniam earum qui cupiditate accusamus sit, perspiciatis officia praesentium velit rerum
+                tempore blanditiis ipsam a? Magni, nam praesentium!</p>
+        </div>
+        <div id="second">
+            <p>
+                ESTE ES EL SEGUNDO PARRAFO QUE TENIA QUE APARECER CON FONDO AZULITO Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magni ullam recusandae quas cumque
+                dolorem asperiores, provident, optio amet voluptas voluptatem quaerat vero. Porro, fugit asperiores.
+                Possimus minima, placeat explicabo blanditiis voluptate tenetur, sequi illum hic aspernatur iure ullam rerum
+                ratione? Totam veniam earum qui cupiditate accusamus sit, perspiciatis officia praesentium velit rerum
+                tempore blanditiis ipsam a? Magni, nam praesentium!</p>
+        </div>
+    <script>
+
+    const div1 = document.querySelector('#first')
+    const div2 = document.querySelector('#second')
+    
+   div1.addEventListener("click",()=>{
+    console.log("se hace el click")
+    div1.style.display = "none"
+    div2.style.display = "block";
+   })
+    </script>
+</body>
+
+</html>

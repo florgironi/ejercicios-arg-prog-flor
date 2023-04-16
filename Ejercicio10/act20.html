@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 19</title>
+</head>
+<style>
+    .clasePorDefecto{
+        border: 1px solid #c3c3c3;
+        height: 70px;
+        width: 800px;
+    }
+    .claseHover{
+        height: 250px !important;
+        width: 250px !important;
+    }
+</style>
+<body>
+    <div class="clasePorDefecto" id="clasePorDefecto">
+        Soy un div 
+    </div>
+
+    <script>
+
+        let aver = document.querySelector('#clasePorDefecto')
+        aver.addEventListener("ondblclick",()=>{
+            aver.classList.add('claseHover');
+        })
+
+        aver.addEventListener("ondblclick",()=>{
+            aver.classList.remove('claseHover');
+        })
+    
+        
+    </script>
+</body>
+</html>
