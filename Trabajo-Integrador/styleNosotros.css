@@ -1,0 +1,8 @@
+#hero{
+    padding: 3rem 0;
+}
+.column{
+    min-width: 60%;
+    max-width: 70%;
+    padding: 2rem;
+}

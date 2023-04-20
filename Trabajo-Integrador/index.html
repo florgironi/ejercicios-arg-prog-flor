@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleForm.css">
+  <link rel="stylesheet" href="styleFooter.css">
+  <link rel="stylesheet" href="stylePlanes.css">
+  <link rel="stylesheet" href="styleProfesionales.css">
+  <link rel="stylesheet" href="styleNosotros.css">
+  <title>Actividad 12</title>
+</head>
+
+<body>
+  <header>
+    <nav class="d-flex justify-content-around align-items-center">
+      <div class="logo">
+        <img src="./assets/pataYMano.jpg" class="logo" alt="logo">
+      </div>
+      <div>
+        <a href="#planes">Planes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="./contratacion.html">Contrataciones</a>
+        <a href="#formulario">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="container">
+    <div class="column">
+      <h1>Nuestro compromiso es cuidar a tu mascota como vos lo haces</h1>
+      <p>Sabemos que tu mascota es parte de tu familia, por eso tenemos la mejor cobertura para tu perro o gato.
+        Un seguro pensado para ellos y para tu tranquilidad.
+        Contratalo fácil, rápido y online.</p>
+    </div>
+  </section>
+
+  <section id="planes">
+    <div class=" container column planes">
+      <h1>La mejor cobertura para tu mascota</h1>
+      <p>Nuestras mascotas merecen estar cubiertos con la mejor atencion</p>
+      <div class="envoltorio-card-planes">
+        <div class="card-plan">
+          <h3>Plan BASE</h3>
+          <h2 class=" precio">$ 2000</h2>
+          <span>Descuentos para 2 o mas mascotas </span>
+          <a href="./contratacion.html">
+            <button class="btnLoQuiero"> Contratar </button>
+          </a>
+          <button class="btnQueCubre"> Que cubre?</button>
+        </div>
+        <div class="card-plan">
+          <span>Recomendado</span>
+          <h3>Plan FULL</h3>
+          <h2 class="  precio">$ 3000</h2>
+          <span>Descuentos para 2 o mas mascotas </span>
+          <a href="./contratacion.html">
+            <button class="btnLoQuiero"> Contratar </button>
+          </a>
+          <button class="btnQueCubre"> Que cubre?</button>
+
+        </div>
+        <div class="card-plan">
+          <h3>Plan PREMIUN</h3>
+          <h2 class="precio">$ 4000</h2>
+          <span>Descuentos para 2 o mas mascotas </span>
+          <a href="./contratacion.html">
+            <button class="btnLoQuiero"> Contratar </button>
+          </a>
+          <button class="btnQueCubre"> Que cubre?</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profesionales" class="container seccion-profesionales">
+    <div class="container envoltorio-card-profesionales">
+      <h1>Profesional Responsable</h1>
+      <div class="card-profesional">
+          <img src="./assets/fotoPerfil.jpg" alt="perfil">
+          <div class="envoltorio-nombre-profesional">
+          <span>Florencia Gironi</span>
+          <span>Veterinaria</span>
+        </div>
+          
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="formulario" class="container">
+    <div class="envoltorio-form">
+      <form id="primerForm" action="">
+        <h5> Deja tus datos y un asesor se va a estar comunicando.</h5>
+        <div class="envoltorio-form-contacto">
+          <div>
+            <label for="name"> Nombre y apellido:</label>
+            <input type="text" required id="name" placeholder="Nombre y apellido">
+            <p class="mensaje-error">Este campo es obligatorio</p>
+          </div>
+          <div >
+            <label for="email"> Email: </label>
+            <input type="email" required id="email" placeholder="Email">
+          </div>
+          <div>
+            <label for="telefono"> Telefono de contacto: </label>
+            <input type="tel" required id="telefono" placeholder="Telefono de contacto">
+          </div>
+          <div >
+            <label for="telefono"> Motivo de consulta: </label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <div class="envoltorio-btn-enviar">
+            <button id="btn-enviar-form-contacto" class="btn-enviar" type="submit">Enviar</button>
+          </div>
+      </form>
+      <div id="mensajeDespuesDeForm" class="mensajeDespuesDeForm">
+        <p>El formulario se mando con exito! <br>
+        Un ascesor se estara comunicando a la brevedad.</p>
+      </div>
+    </div>
+
+  </section>
+  <footer class="d-flex align-items-center justify-content-center flex-column">
+    <section id="contacto">
+      <h1 class="my-4">Veterinaria online</h1>
+      <p class="my-4 p-footer">Somos Veterinaria Online, con más de 20 años de trayectoria en el rubro. Contamos con un
+        gran equipo ; disponibles para asesorarte cuando lo necesites. Trabajamos para hacer más sencilla y placentera
+        tu experiencia de compra, simplificando la transacción con simple pasos.</p>
+    </section>
+    <div class="ultimo-footer">
+      <div class="envoltorio-iconos mb-4">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-phone"
+            viewBox="0 0 16 16">
+            <path
+              d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg>
+          <div>
+            <span>Celular</span>
+            <span>3517804796</span>
+          </div>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar-plus"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+            <path
+              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+          </svg>
+          <div>
+            <span>Turnero</span>
+            <span>Solicite turno online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

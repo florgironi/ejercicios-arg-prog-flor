@@ -1,0 +1,40 @@
+:root{
+    --body-color-pink-primary:#F68CB9;
+    --body-color-blue-secundary:#3f3c91;
+    --plan1-color-secundary:rgb(233, 187, 107);
+    --plan1-color-primary:rgb(247, 171, 38);
+    --plan2-color-primary:rgb(53, 53, 184);
+    --plan2-color-secundary:rgb(54, 54, 248);
+    --plan3-color-primary:rgb(55, 132, 55);
+    --plan3-color-secundary:rgb(103, 200, 103);
+}
+.seccion-profesionales{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-profesional{
+    display: flex;
+    align-items: center;
+    border: 0.5px solid var(--body-color-blue-secundary);
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+.card-profesional img{
+    width: 10rem;
+    margin: 2rem;
+    box-shadow: 0px 6px 60px 5px #d9d9d9;
+
+}
+.envoltorio-nombre-profesional{
+    display: flex;
+    flex-direction: column;
+}
+.envoltorio-nombre-profesional span:nth-child(1){
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+.envoltorio-nombre-profesional span:nth-child(2){
+    color: var(--body-color-blue-secundary) ;
+}

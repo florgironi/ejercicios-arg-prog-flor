@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleForm.css">
+  <link rel="stylesheet" href="styleFooter.css">
+  <link rel="stylesheet" href="stylePlanes.css">
+  <title>Actividad 12</title>
+</head>
+
+<body>
+  <header>
+    <nav class="d-flex justify-content-around align-items-center">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/pataYMano.jpg" class="logo" alt="logo">
+        </a>
+      </div>
+      <div>
+        <a href="./index.html">Planes</a>
+        <a href="./index.html">Nosotros</a>
+        <a href="#">Contrataciones</a>
+        <a href="./index.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+    
+  <main>
+    <section id="secction-primer-form">
+      <div class="envoltorio-form container mx-auto">
+        <form action="#" id="formulario" class="grid gap-3">
+          <div class="primer-div-form">
+            <h4 class="m-0">Formulario de Cotizacion</h4>
+            <button class="btn-reset" type="reset"> Borrar info </button>
+          </div>
+          <div class="segundo-div-form">
+            <div class="datosDueño">
+              <h6 class="my-4">Dato del datos del dueño:</h6>
+              <div id="name">
+                <label for="name"> Nombre del responsable:</label>
+                <input type="text" required id="name" placeholder="Nombre">
+              </div>
+              <div id="lastname">
+                <label for="lastname"> Apellido: </label>
+                <input type="text" required id="name" placeholder="Apellido">
+              </div>
+              <div id="email">
+                <label for="email"> Email: </label>
+                <input type="email" required id="email" placeholder="Email">
+              </div>
+              <div id="telefono">
+                <label for="telefono"> Telefono de contacto: </label>
+                <input type="tel" required id="telefono" placeholder="Telefono de contacto">
+              </div>
+            </div>
+            <div class="datosMascota">
+              <h6 class="my-4">Datos de la mascota:</h6>
+              <div>
+                <label for="nameanimal"> Nombre del animal: </label>
+                <input type="text" required id="nameanimal" placeholder="Nombre del animal">
+              </div>
+              <div class="envoltorio-inputs-radio">
+                <div>
+                  <p>
+                    Tipo de animal:<br>
+                    <label>
+                      <input type="radio" name="tipodeanimal" value="gato"> Gato<br>
+                    </label><br>
+                    <label>
+                      <input type="radio" name="tipodeanimal" value="perro"> Perro<br>
+                    </label><br>
+                    <label>
+                      <input type="radio" name="tipodeanimal" value="tortuga"> Tortuga<br>
+                    </label><br>
+                    <label>
+                      <input type="radio" name="tipodeanimal" value="coballo"> Coballo<br>
+                    </label><br>
+                    <label>
+                      <input type="radio" name="tipodeanimal" value="conejo"> Conejo<br>
+                    </label><br>
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Edad del animal:<br>
+                    <label>
+                      <input type="radio" name="edadanimal" value="bebe"> 0-3 meses
+                    </label><br>
+                    <label>
+                      <input type="radio" name="edadanimal" value="chico"> 3-6 meses
+                    </label><br>
+                    <label>
+                      <input type="radio" name="edadanimal" value="joven"> 6-12 meses
+                    </label><br>
+                    <label>
+                      <input type="radio" name="edadanimal" value="adulto"> +1 año
+                    </label><br>
+                    <label>
+                      <input type="radio" name="edadanimal" value="adulto+"> +5 años
+                    </label><br>
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Sexo:<br>
+                    <label>
+                      <input type="radio" name="sexo" value="hembra"> Hembra
+                    </label><br>
+                    <label>
+                      <input type="radio" name="sexo" value="macho"> Macho
+                    </label><br>
+                  </p>
+                </div>
+              </div>
+              <div >
+                <label for="raza"> Raza: </label>
+                <input type="text" id="raza" placeholder="Raza">
+              </div>
+              <div>
+                <label for="color"> Color: </label>
+                <input type="text" id="color" placeholder="Color">
+              </div>
+              <div id="plan" class="planes-form">
+                <label for="plan"> Plan a contratar: </label>
+                <select name="select" required id="planElegido">
+                    <option value="value1" selected>Selecciona una opcion</option>
+                    <option value="value2">Plan Base</option>
+                    <option value="value1">Plan Full</option>
+                    <option value="value3">Plan Premiun</option>
+                  </select>
+              </div>
+            </div>
+          <a href="#pagar">
+            <div class="envoltorio-btn-enviar">
+              <button class="btn-enviar"  id="btn-siguiente-form" type="submit">Siguiente</button>
+            </div>
+          </a>
+            
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="pagar">
+      <div class="envoltorio-form container mx-auto">
+        <div>
+          <h1>Orden de compra</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Plan</th>
+                <th scope="col">Monto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td id="nameMichiValue"></td>
+                <td id="planValue">Otto</td>
+                <td id="montoPlanValue">@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="envoltorio-btn-enviar">
+            <button class="btn-enviar" id="btn-pagar-form" type="submit">Pagar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="d-flex align-items-center justify-content-center flex-column">
+    <section id="contacto">
+        <h1 class="my-4">Veterinaria online</h1>
+        <p class="my-4 p-footer">Somos Veterinaria Online, con más de 20 años de trayectoria en el rubro. Contamos con un
+        gran equipo ; disponibles para asesorarte cuando lo necesites. Trabajamos para hacer más sencilla y placentera
+        tu experiencia de compra, simplificando la transacción con simple pasos.</p>
+    </section>
+    <div class="ultimo-footer">
+        <div class="envoltorio-iconos mb-4">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-phone"
+            viewBox="0 0 16 16">
+            <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+            </svg>
+            <div>
+            <span>Celular</span>
+            <span>3517804796</span>
+            </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar-plus"
+            viewBox="0 0 16 16">
+            <path
+                d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+            <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+            </svg>
+            <div>
+            <span>Turnero</span>
+            <span>Solicite turno online</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </footer> 
+  <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

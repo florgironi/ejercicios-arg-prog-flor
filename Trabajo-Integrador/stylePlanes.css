@@ -1,0 +1,57 @@
+:root{
+    --body-color-pink-primary:#F68CB9;
+    --body-color-blue-secundary:#3f3c91;
+    --plan1-color-secundary:rgb(233, 187, 107);
+    --plan1-color-primary:rgb(247, 171, 38);
+    --plan2-color-primary:rgb(53, 53, 184);
+    --plan2-color-secundary:rgb(54, 54, 248);
+    --plan3-color-primary:rgb(55, 132, 55);
+    --plan3-color-secundary:rgb(103, 200, 103);
+}
+
+.planes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    min-height: 500px;
+    justify-content: center;
+}
+.envoltorio-card-planes{
+    display: flex;
+}
+.card-plan{
+    padding: 2rem;
+    border-radius: 20px;
+    margin:  2rem ;
+    backdrop-filter: blur(60px);
+    text-align: center;
+    border: 3px solid var(--body-color-blue-secundary);
+
+}
+.card-plan:hover{
+    scale: 1.1;
+}
+.card-plan h2,h3{
+    color: var(--body-color-blue-secundary);
+}
+.btnQueCubre{
+    border: 1px solid var(--body-color-blue-secundary);
+    color: var(--body-color-blue-secundary);
+    border-radius: 20px;
+    height: 2rem;
+    width: 10rem;
+    margin-top: 4rem;
+}
+.btnLoQuiero{
+    border-radius: 30px;
+    height: 3rem;
+    width: 12rem;
+    margin-top: 4rem;
+    font-size: 21px;
+    background-color: var(--body-color-pink-primary);
+    color: white;
+    border: none;
+    
+}
+

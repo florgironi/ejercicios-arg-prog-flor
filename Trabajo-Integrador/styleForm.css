@@ -1,0 +1,105 @@
+h4{
+    color: #3f3c91;
+    font-size: 25px;
+}
+h6{
+    font-weight: 900;
+    font-size: 18px;
+    color: #F68CB9;
+}
+.envoltorio-form{
+    border: 1px solid #c3c3c3;
+    padding: 3rem;
+    margin: 1rem 0 8rem 0;
+    border-radius: 30px;
+    box-shadow: 0px 6px 60px 5px #d9d9d9;
+}
+.primer-div-form{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.datosDueño{
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 2rem;
+}
+.envoltorio-inputs-radio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    margin-top: 2rem;
+}
+.envoltorio-inputs-radio label{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+.envoltorio-inputs-radio input{
+    width: auto;
+}
+label {
+    font-weight: 400;
+    margin: 1rem ;
+}
+input{
+    border: none;
+    border-top: 1px solid #c3c3c3;
+    border-radius: 20px;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+}
+.btn-reset{
+    border: 1px solid #F68CB9;
+    color: #F68CB9;
+    background-color: white;
+    border-radius: 25px;
+    height: 3rem;
+    width: 200px;
+}
+.envoltorio-btn-enviar{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-enviar{
+    background-color: #F68CB9;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 3rem;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+textarea{
+    border-radius: 20px;
+    display: block;
+    margin-left: 2rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    width: 80%;
+}
+.planes-form{
+    background-color: #3f3c91;
+    color: white;
+    /* height: 6rem; */
+    border-radius: 20px;
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+
+}
+select{
+    word-wrap: normal;
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 14rem;
+}
+.mensajeDespuesDeForm{
+    display: none;
+    font-size: 25px;
+}
